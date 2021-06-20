@@ -1,0 +1,22 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.5.10'
+}
+
+compileKotlin {
+    kotlinOptions.useIR = true
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib"
+    implementation 'com.github.pengrad:java-telegram-bot-api:5.0.1'
+    implementation 'org.slf4j:slf4j-api:1.7.30'
+    implementation 'org.slf4j:slf4j-simple:1.7.30'
+}
+
