@@ -1,5 +1,7 @@
 fun main(args: Array<String>) {
 
-    val bot = Bot(System.getenv("BOT_TOKEN"))
-    bot.listen()
+    Bot(
+        token = System.getenv("BOT_TOKEN"),
+        trainingDataDir = System.getenv("TRAINING_DATA_DIR")
+    ).listen()
 }
